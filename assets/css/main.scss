@@ -1,0 +1,10 @@
+---
+---
+
+@import "minimal-mistakes";
+
+/* 自定义样式 - 缩小博客正文字体 */
+.page__content {
+  font-size: 0.75em;
+  line-height: 1.5;
+}

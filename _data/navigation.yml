@@ -1,11 +1,11 @@
 main:
   - title: "首页"
     url: /
-  - title: "简介"
-    url: /
-  - title: "快速上手"
+  - title: "快速开始"
     url: /quickstart
-  - title: "Skills"
-    url: /
+  - title: "使用场景"
+    url: /gallery
+  - title: "技能广场"
+    url: /skills
   - title: "关于我们"
     url: /about

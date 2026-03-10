@@ -30,7 +30,7 @@ github_username:  uv0xab
 
 # Build settings
 theme: minimal-mistakes-jekyll
-codeminimal_mistakes_skin: catppuccin_latte
+minimal_mistakes_skin: catppuccin_latte
 plugins:
   - jekyll-feed
 
