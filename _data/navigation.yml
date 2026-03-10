@@ -1,0 +1,11 @@
+main:
+  - title: "首页"
+    url: /
+  - title: "简介"
+    url: /
+  - title: "快速上手"
+    url: /quickstart
+  - title: "Skills"
+    url: /
+  - title: "关于我们"
+    url: /about
