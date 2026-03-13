@@ -5,6 +5,16 @@
 
 /* 自定义样式 - 缩小博客正文字体 */
 .page__content {
-  font-size: 0.75em;
-  line-height: 1.5;
+    font-size: 0.75em;
+    line-height: 1.5;
+}
+
+.toc__menu {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+/* 隐藏 logo 旁边的站点标题文字 */
+.masthead__menu.site-title {
+    display: none !important;
 }
