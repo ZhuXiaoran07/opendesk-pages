@@ -6,6 +6,6 @@ main:
   - title: "使用场景"
     url: /gallery
   - title: "技能广场"
-    url: /skills
+    url: https://matrix.openharmony.cn/#/skillSquare
   - title: "关于我们"
     url: /about

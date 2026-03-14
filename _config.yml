@@ -35,6 +35,25 @@ minimal_mistakes_skin: catppuccin_latte
 plugins:
   - jekyll-feed
 
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      sidebar: false
+
+copyright: "© 2026 The OpenDesk Team, All Right Reserved, Powered by Jekyll & Minimal Mistakes"
+
+footer:
+  links:
+    - label: "GitCode"
+      icon: "fab fa-fw fa-git-alt"
+      url: "https://gitcode.com/openharmony-robot/OpenDesk"
+    - label: ""
+      icon: "/assets/images/openharmony/logo.png"
+      url: "https://gitcode.com/openharmony-robot/OpenDesk"
+
 author:
   name             : "Your Name"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"

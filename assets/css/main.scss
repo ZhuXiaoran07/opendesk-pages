@@ -3,10 +3,23 @@
 
 @import "minimal-mistakes";
 
+.page {
+    width: 100%;
+}
+
 /* 自定义样式 - 缩小博客正文字体 */
 .page__content {
-    font-size: 0.75em;
+    font-size: 0.8em;
     line-height: 1.5;
+}
+
+/* 隐藏页面大标题 */
+#page-title {
+    display: none !important;
+}
+
+.archive {
+    width: calc(100%);
 }
 
 .toc__menu {
@@ -17,4 +30,9 @@
 /* 隐藏 logo 旁边的站点标题文字 */
 .masthead__menu.site-title {
     display: none !important;
+}
+
+blockquote {
+    margin-left: 0;
+    margin-right: 0;
 }
