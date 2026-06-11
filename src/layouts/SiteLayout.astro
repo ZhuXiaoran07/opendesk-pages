@@ -1,0 +1,35 @@
+---
+import SiteFooter from '../components/SiteFooter.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import { site } from '../config/site';
+import { ClientRouter } from 'astro:transitions';
+import '../styles/global.css';
+import '../styles/header.css';
+
+const { frontmatter = {} } = Astro.props;
+const title = frontmatter.title ? `${frontmatter.title} | ${site.title}` : site.title;
+const description = frontmatter.description ?? site.description;
+const variant = frontmatter.variant ?? 'default';
+const hideFooter = frontmatter.hideFooter ?? false;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.ico" />
+    <title>{title}</title>
+    <ClientRouter />
+  </head>
+  <body>
+    <div class="site-shell">
+      <SiteHeader variant={variant} />
+      <main class:list={['site-main', variant === 'landing' && 'site-main--landing']}>
+        <slot />
+      </main>
+      {!hideFooter && <SiteFooter />}
+    </div>
+  </body>
+</html>
